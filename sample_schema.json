@@ -1,0 +1,32 @@
+{
+  "name": "sample-install-config",
+  "main": "index.js",
+  "modules": [
+
+  ],
+  "schedule": [
+    {
+      "type": "date",
+      "time": "2022-12-01 02:04:13"
+    },
+    "42 * * * *",
+    {
+      "type": "literal",
+      "time": {"hour": "14", "minute": "30", "dayOfWeek": "0"}
+    }
+  ],
+  "recurrence": [
+    "*/5 * * * *",
+    {
+      "unit": "minute",
+      "time": "42"
+    }
+  ],
+  "range": [
+    {
+      "dayOfWeek": [4,6],
+      "hour": 17,
+      "minute": 5
+    }
+  ]
+}
